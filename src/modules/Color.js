@@ -8,9 +8,7 @@ class Color {
     //attend un argument hex = [x,y,z]
     constructor(hsl){
         this.#hsl = hsl;
-        console.log(this.#hsl);
         this.#hex = convert.hsl.hex(this.#hsl);
-        console.log(this.#hex);
         this.#element = this.#generateElement();
     }
 
